@@ -1,2 +1,4 @@
 2023-03-14 15:29:25,307 0      [  restartedMain] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
 2023-03-14 15:29:38,258 12951  [extShutdownHook] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} closed
+2023-03-14 15:36:08,033 0      [  restartedMain] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2023-03-14 15:36:39,671 31638  [nio-8800-exec-2] INFO  .service.impl.LoginServiceImpl  - 020406Ax#!-#!-#!1678779398731
