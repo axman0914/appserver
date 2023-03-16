@@ -4,6 +4,7 @@ import boe.b4.appserver.modules.common.service.LoginService;
 import boe.b4.appserver.utils.JSMethods;
 import boe.b4.appserver.utils.JavaScriptProvider;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.script.ScriptException;
