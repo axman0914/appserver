@@ -1,6 +1,9 @@
 package boe.b4.appserver.utils;
 
 import boe.b4.appserver.utils.domain.ConnectionInfo;
+import org.dom4j.Document;
+import org.dom4j.DocumentHelper;
+import org.dom4j.Element;
 import org.hibernate.internal.util.xml.XmlDocument;
 import org.omg.IOP.Encoding;
 
@@ -75,47 +78,15 @@ public class MessageUtil {
 
     private <T> String CreateQueryMessage(T objPara)
     {
-        /*XmlDocument rtnDoc = new XmlDocument();
+        // 1、创建document对象
+        Document document = DocumentHelper.createDocument();
+        // 2、创建根节点root
+        Element root = document.addElement("Message");
+        Element header = root.addElement("Header");
 
-        StringBuilder sBuilder = new StringBuilder();
 
-        XmlWriterSettings xws = new XmlWriterSettings();
-        xws.Encoding = Encoding.UTF8;
-        xws.Indent = true;
 
-        XmlWriter writer = XmlWriter.Create(sBuilder, xws);
 
-        // Message
-        writer.WriteStartElement(xmlElementMessage);
-
-        WriteMessageHeader(ref writer);
-
-        // Body Start
-        writer.WriteStartElement("Body");
-
-        writer.WriteStartElement("QUERYID");
-        writer.WriteString(ConnectionInfo.QueryName);
-        writer.WriteEndElement();
-
-        writer.WriteStartElement("VERSION");
-        writer.WriteString(ConnectionInfo.QueryVersion);
-        writer.WriteEndElement();
-
-        writer.WriteStartElement("BINDV");
-
-        WriteStringElement(ref writer, objPara);
-
-        writer.WriteEndElement();
-
-        // Body End
-        writer.WriteEndElement();
-
-        // Message
-        writer.WriteEndElement();
-
-        writer.Close();
-
-        return sBuilder.ToString();*/
         return null;
     }
 

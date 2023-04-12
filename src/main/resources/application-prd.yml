@@ -3,10 +3,10 @@ server:
   servlet:
     encoding:
       enabled: true
-      charset: GBK
+      charset: UTF-8
       force: true
   tomcat:
-    uri-encoding: GBK
+    uri-encoding: UTF-8
 druid:
   allow:
     ip: 127.0.0.1
@@ -27,7 +27,7 @@ spring:
           url: jdbc:oracle:thin:@10.90.248.61:1521:edbyms1
           username: edbadm
           password: adm1234
-        mwms_prd:
+        mwms:
           driver-class-name: oracle.jdbc.driver.OracleDriver
           url: jdbc:oracle:thin:@10.90.248.55:1521:fgmsdb1
           username: mwmsadm

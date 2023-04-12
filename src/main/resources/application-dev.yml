@@ -32,6 +32,11 @@ spring:
           url: jdbc:oracle:thin:@10.90.247.1:1521:d1dev
           username: d1modadm
           password: adm1211
+        mwms:
+          driver-class-name: oracle.jdbc.driver.OracleDriver
+          url: jdbc:oracle:thin:@10.90.247.1:1521:d1dev
+          username: mwmstest
+          password: mwmstest
       type: com.alibaba.druid.pool.DruidDataSource
       # 连接池的配置信息
       # 初始化⼤⼩，最⼩等待连接数量，最⼤等待连接数量，最⼤连接数

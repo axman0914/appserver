@@ -21,7 +21,7 @@ import java.util.List;
  * @since 2023-03-16
  */
 @Service
-@DS("mwms_prd")
+@DS("mwms")
 public class MaterialpackinghistoryServiceImpl extends ServiceImpl<MaterialpackinghistoryMapper, Materialpackinghistory> implements MaterialpackinghistoryService {
 
     @Autowired
