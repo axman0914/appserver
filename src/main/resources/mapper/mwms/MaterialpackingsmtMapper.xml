@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="boe.b4.appserver.modules.mwms.mapper.MaterialpackingsmtMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="boe.b4.appserver.modules.mwms.model.Materialpackingsmt">
+        <id column="SITENAME" property="sitename" />
+        <result column="MATERIALPACKINGNAME" property="materialpackingname" />
+        <result column="MATERIALPACKINGTYPE" property="materialpackingtype" />
+        <result column="CONTENTMATERIALTYPE" property="contentmaterialtype" />
+        <result column="MATERIALTYPE" property="materialtype" />
+        <result column="MATERIALSPECNAME" property="materialspecname" />
+        <result column="SUPERMATERIALPACKINGNAME" property="supermaterialpackingname" />
+        <result column="PACKINGGRADE" property="packinggrade" />
+        <result column="SUBPACKINGQUANTITY" property="subpackingquantity" />
+        <result column="MATERIALCREATEQUANTITY" property="materialcreatequantity" />
+        <result column="MATERIALQUANTITY" property="materialquantity" />
+        <result column="PACKINGSTATE" property="packingstate" />
+        <result column="OLDPACKINGSTATE" property="oldpackingstate" />
+        <result column="STOCKSTATE" property="stockstate" />
+        <result column="OLDSTOCKSTATE" property="oldstockstate" />
+        <result column="HOLDSTATE" property="holdstate" />
+        <result column="AREANAME" property="areaname" />
+        <result column="LOCATIONNAME" property="locationname" />
+        <result column="DURABLENAME" property="durablename" />
+        <result column="MATERIALPROCESSGROUPNAME" property="materialprocessgroupname" />
+        <result column="LASTEVENTNAME" property="lasteventname" />
+        <result column="LASTEVENTTIMEKEY" property="lasteventtimekey" />
+        <result column="LASTEVENTTIME" property="lasteventtime" />
+        <result column="LASTEVENTUSER" property="lasteventuser" />
+        <result column="LASTEVENTCOMMENT" property="lasteventcomment" />
+        <result column="CREATETIME" property="createtime" />
+        <result column="CREATEUSER" property="createuser" />
+        <result column="RECEIVEREQUESTNAME" property="receiverequestname" />
+        <result column="RECEIVEREQUESTDETAILNAME" property="receiverequestdetailname" />
+        <result column="MAKEDATE" property="makedate" />
+        <result column="RECEIVEACTNO" property="receiveactno" />
+        <result column="RECEIVETIME" property="receivetime" />
+        <result column="RECEIVEUSER" property="receiveuser" />
+        <result column="SHIPREQUESTNAME" property="shiprequestname" />
+        <result column="SHIPREQUESTDETAILNAME" property="shiprequestdetailname" />
+        <result column="SHIPTIME" property="shiptime" />
+        <result column="SHIPUSER" property="shipuser" />
+        <result column="REASONCODETYPE" property="reasoncodetype" />
+        <result column="REASONCODE" property="reasoncode" />
+        <result column="ERPLOCATION" property="erplocation" />
+        <result column="ETCSTATE" property="etcstate" />
+        <result column="ERPFACTORY" property="erpfactory" />
+        <result column="STOCKINTYPE" property="stockintype" />
+        <result column="OQARESULTSTATE" property="oqaresultstate" />
+        <result column="OQARESULT" property="oqaresult" />
+        <result column="CHARGE" property="charge" />
+        <result column="SUPPLIERNAME" property="suppliername" />
+        <result column="UNDOID" property="undoid" />
+        <result column="UNDODETAILNAME" property="undodetailname" />
+        <result column="ERPEVENTTIME" property="erpeventtime" />
+        <result column="NPFLAG" property="npflag" />
+        <result column="MESSAGEID" property="messageid" />
+        <result column="ERPSTATE" property="erpstate" />
+        <result column="SAVEREASON" property="savereason" />
+        <result column="ENDDATE" property="enddate" />
+        <result column="SMTEVENTTIME" property="smteventtime" />
+        <result column="TRANSACTIONID" property="transactionid" />
+        <result column="LOTNO" property="lotno" />
+        <result column="BOESITENAME" property="boesitename" />
+    </resultMap>
+
+</mapper>

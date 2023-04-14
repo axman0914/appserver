@@ -43,12 +43,12 @@ public class LotController {
         return CommonResult.success(update);
     }
 
-    @ApiOperation("查询Lot信息")
+    /*@ApiOperation("查询Lot信息")
     @RequestMapping(value = "/getLotInfo",method = RequestMethod.GET)
     @ResponseBody
     public CommonResult getLotInfo(String lotName) throws Exception{
         List<Map<String,Object>> lotList = lotService.getLotInfo(lotName);
         return CommonResult.success(lotList);
-    }
+    }*/
 }
 

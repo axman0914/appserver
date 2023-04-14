@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="boe.b4.appserver.modules.common.mapper.AppConfigTibcoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="boe.b4.appserver.modules.common.model.AppConfigTibco">
+        <result column="LISTENERSUBJECTNAME" property="listenersubjectname" />
+        <result column="SERVICE" property="service" />
+        <result column="NETWORK" property="network" />
+        <result column="DAEMON" property="daemon" />
+        <result column="CMNAME" property="cmname" />
+        <result column="DATAFIELD_TAG" property="datafieldTag" />
+        <result column="SENDREQUESTTIMEOUT" property="sendrequesttimeout" />
+        <result column="TIB_MODE" property="tibMode" />
+        <result column="TIB_NAME" property="tibName" />
+    </resultMap>
+
+</mapper>
