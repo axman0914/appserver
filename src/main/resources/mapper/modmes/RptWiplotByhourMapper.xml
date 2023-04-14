@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="boe.b4.appserver.modules.modmes.mapper.RptWiplotByhourMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="boe.b4.appserver.modules.modmes.model.RptWiplotByhour">
+        <id column="FACTORYNAME" property="factoryname" />
+        <result column="FACTORYDATE" property="factorydate" />
+        <result column="FACTORYSHIFT" property="factoryshift" />
+        <result column="FACTORYHOUR" property="factoryhour" />
+        <result column="LOTNAME" property="lotname" />
+        <result column="PRODUCTIONTYPE" property="productiontype" />
+        <result column="PRODUCTSPECNAME" property="productspecname" />
+        <result column="PRODUCTREQUESTNAME" property="productrequestname" />
+        <result column="PROCESSGROUPNAME" property="processgroupname" />
+        <result column="CARRIERNAME" property="carriername" />
+        <result column="PRODUCTTYPE" property="producttype" />
+        <result column="LOTTYPE" property="lottype" />
+        <result column="PANELTYPE" property="paneltype" />
+        <result column="SUBPRODUCTTYPE" property="subproducttype" />
+        <result column="SUBPRODUCTUNITQUANTITY1" property="subproductunitquantity1" />
+        <result column="SUBPRODUCTUNITQUANTITY2" property="subproductunitquantity2" />
+        <result column="PRODUCTQUANTITY" property="productquantity" />
+        <result column="SUBPRODUCTQUANTITY" property="subproductquantity" />
+        <result column="LOTGRADE" property="lotgrade" />
+        <result column="DUEDATE" property="duedate" />
+        <result column="PRIORITY" property="priority" />
+        <result column="DESTINATIONFACTORYNAME" property="destinationfactoryname" />
+        <result column="AREANAME" property="areaname" />
+        <result column="LOTSTATE" property="lotstate" />
+        <result column="LOTPROCESSSTATE" property="lotprocessstate" />
+        <result column="LOTHOLDSTATE" property="lotholdstate" />
+        <result column="LASTEVENTNAME" property="lasteventname" />
+        <result column="LASTEVENTTIMEKEY" property="lasteventtimekey" />
+        <result column="LASTEVENTTIME" property="lasteventtime" />
+        <result column="LASTEVENTUSER" property="lasteventuser" />
+        <result column="LASTEVENTCOMMENT" property="lasteventcomment" />
+        <result column="LASTEVENTFLAG" property="lasteventflag" />
+        <result column="CREATETIME" property="createtime" />
+        <result column="CREATEUSER" property="createuser" />
+        <result column="RELEASETIME" property="releasetime" />
+        <result column="RELEASEUSER" property="releaseuser" />
+        <result column="REASONCODETYPE" property="reasoncodetype" />
+        <result column="REASONCODE" property="reasoncode" />
+        <result column="PROCESSFLOWNAME" property="processflowname" />
+        <result column="PROCESSOPERATIONNAME" property="processoperationname" />
+        <result column="MACHINENAME" property="machinename" />
+        <result column="MACHINERECIPENAME" property="machinerecipename" />
+        <result column="REWORKSTATE" property="reworkstate" />
+        <result column="REWORKCOUNT" property="reworkcount" />
+        <result column="REWORKNODEID" property="reworknodeid" />
+        <result column="CHECKINCODE" property="checkincode" />
+        <result column="REVISIONCODE" property="revisioncode" />
+        <result column="MODULENAME" property="modulename" />
+        <result column="OQALOTNAME" property="oqalotname" />
+        <result column="LINENAME" property="linename" />
+        <result column="RECEIVETYPE" property="receivetype" />
+        <result column="RECEIVEFROM" property="receivefrom" />
+        <result column="ETCSTATE" property="etcstate" />
+        <result column="ETCLOCATION" property="etclocation" />
+        <result column="ETCRETURNMODE" property="etcreturnmode" />
+        <result column="CELLLOTNAME" property="celllotname" />
+        <result column="PRODUCTCODE" property="productcode" />
+        <result column="OQAJUDGE" property="oqajudge" />
+        <result column="DEFECTSIZE" property="defectsize" />
+        <result column="ARRIVETIME" property="arrivetime" />
+        <result column="GROUPNAME" property="groupname" />
+        <result column="UPDATETIME" property="updatetime" />
+        <result column="MODULESTARTFLAG" property="modulestartflag" />
+        <result column="STOCKTOFGMS" property="stocktofgms" />
+        <result column="CT_FACTORYNAME" property="ctFactoryname" />
+    </resultMap>
+
+</mapper>

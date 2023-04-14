@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" init-method="createDataSource" destroy-method="close">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+
+        <!-- <property name="url" value="jdbc:oracle:thin:@10.90.248.57:1521:MODDB1" /> -->
+
+        <property name="url" value="jdbc:oracle:thin:@10.90.247.1:1521:d1dev" />
+
+        <!--<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:orcl" />-->
+
+        <property name="maxActive" value="20" />
+        <property name="maxIdle" value="-1" />
+        <property name="minIdle" value="5" />
+        <property name="maxWait" value="5000" />
+        <property name="initialSize" value="10" />
+        <property name="validationQuery" value="select 1 from dual" />
+        <property name="testOnBorrow" value="true" />
+        <property name="minEvictableIdleTimeMillis" value="30000" />
+        <property name="timeBetweenEvictionRunsMillis" value="60000" />
+
+        <!--<property name="username" value="modadm" />
+        <property name="password" value="adm1210" />-->
+
+        <property name="username" value="d1modadm" />
+        <property name="password" value="adm1211" />
+
+        <!-- <property name="username" value="b4modadm" />
+        <property name="password" value="b4modadm" /> -->
+        <!--
+                 <property name="connectionProperties" value="v$session.program=MESMOD-${svr}#${Seq}"/>
+        -->
+    </bean>
+
+
+    <!--<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" init-method="createDataSource" destroy-method="close">
+            <property name="maxWait" value="5000" />
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+        <property name="url">
+                        <value>
+                                        jdbc:oracle:thin:@(DESCRIPTION =
+                                            (ADDRESS_LIST =
+                                              (LOAD_BALANCE = OFF)
+                                              (FAILOVER = ON)
+                                              (ADDRESS =
+                                                (PROTOCOL = TCP)
+                                                (HOST = 10.70.1.53)
+                                                (PORT = 1521)
+                                              )
+                                              (ADDRESS =
+                                                (PROTOCOL = TCP)
+                                                (HOST = 10.70.1.54)
+                                                (PORT = 1521)
+                                              )
+                                            )
+                                            (CONNECT_DATA =
+                                              (SERVICE_NAME = PMESMOD)
+                                              (FAILOVER_MODE =
+                                                (TYPE = SELECT)
+                                                (METHOD = BASIC)
+                                                (retries = 10)
+                                                (delay = 5)
+                                              )
+                                            )
+                                          )
+                        </value>
+                </property>
+        <property name="maxActive" value="20" />
+        <property name="maxIdle" value="-1" />
+        <property name="minIdle" value="5" />
+        <property name="initialSize" value="10" />
+        <property name="validationQuery" value="select 1 from dual" />
+        <property name="testOnBorrow" value="true" />
+        <property name="minEvictableIdleTimeMillis" value="30000" />
+        <property name="timeBetweenEvictionRunsMillis" value="60000" />
+        <property name="username" value="modadm" />
+        <property name="password" value="adm1210" />
+        <property name="connectionProperties" value="v$session.program=MESFAB-${svr}#${Seq}"/>
+    </bean>-->
+
+    <bean id="SqlTemplate" class="com.cim.idm.framework.orm.SqlTemplate">
+        <property name="dataSource" ref="dataSource" />
+        <property name="queryTimeout" value="30" />
+    </bean>
+
+    <!--<bean id="TxDataSourceManager" class="kr.co.aim.nanoframe.transaction.impl.TxDataSourceManagerImpl">
+        <property name="transactionManager">
+            <bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+                <property name="dataSource" ref="dataSource" />
+            </bean>
+        </property>
+        <property name="propagationBehavior" value="PROPAGATION_NESTED" />
+        <property name="isolationLevel" value="ISOLATION_READ_COMMITTED" />
+        <property name="transactionTimeout" value="600" />
+        <property name="autoManaged" value="true" />
+    </bean>-->
+
+    <bean id="LobHandler" class="org.springframework.jdbc.support.lob.OracleLobHandler" >
+        <property name="nativeJdbcExtractor">
+            <bean class="org.springframework.jdbc.support.nativejdbc.CommonsDbcpNativeJdbcExtractor" />
+        </property>
+    </bean>
+</beans>
