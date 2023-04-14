@@ -62,7 +62,7 @@ public class MyBatisPlusGenerator {
     private static GlobalConfig initGlobalConfig(String projectPath) {
         GlobalConfig globalConfig = new GlobalConfig();
         globalConfig.setOutputDir(projectPath + "/src/main/java");
-        globalConfig.setAuthor("XuShu");
+        globalConfig.setAuthor("B4CIM");
         globalConfig.setOpen(false);
         globalConfig.setSwagger2(true);
         globalConfig.setBaseResultMap(true);
@@ -81,7 +81,7 @@ public class MyBatisPlusGenerator {
      * 初始化数据源配置
      */
     private static DataSourceConfig initDataSourceConfig() {
-        Props props = new Props("generator_dev.properties");
+        Props props = new Props("generator_edb.properties");
         DataSourceConfig dataSourceConfig = new DataSourceConfig();
         dataSourceConfig.setUrl(props.getStr("dataSource.url"));
         dataSourceConfig.setDriverName(props.getStr("dataSource.driverName"));
@@ -94,7 +94,7 @@ public class MyBatisPlusGenerator {
      * 初始化包配置
      */
     private static PackageConfig initPackageConfig(String moduleName) {
-        Props props = new Props("generator_dev.properties");
+        Props props = new Props("generator_edb.properties");
         PackageConfig packageConfig = new PackageConfig();
         packageConfig.setModuleName(moduleName);
         packageConfig.setParent(props.getStr("package.base"));
